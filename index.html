@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <meta name="description" content="سيرفر حياة واقعية">
+    <meta name="keywords" content="سيرفر حياة واقعية">
+    <title>LIBERTY CITY CFW - الرئيسية</title>
+        <meta property="og:title" content="LIBERTY CITY CFW" />
+        <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://g-s.tech" />
+    <meta property="og:image" content="https://kyn.fra1.cdn.digitaloceanspaces.com/images/AReelVeSYkyre3VRW0zHcmE8NmplmNrR8Ebvlwe5.gif" />
+    <meta property="og:description" content="سيرفر حياة واقعية" />
+    <meta name="theme-color" content="#5b3125">
+    <meta name="author" content="Theta / https://thta.shop">
+
+    <link rel="shortcut icon" href="https://kyn.fra1.cdn.digitaloceanspaces.com/images/AReelVeSYkyre3VRW0zHcmE8NmplmNrR8Ebvlwe5.gif" type="image/x-icon">
+
+    <link href="https://g-s.tech/websites/style/style18.css" rel="stylesheet" type="text/css" />
+    <style>
+
+    :root {
+    --first_color: #5b3125;
+    --second_color: #6f3725;
+    }
+
+        .form-control{
+          height: auto !important;
+        }
+        .add-to-cart{
+          background-color: transparent;
+          border: 1px solid #1a283f;
+          color: #000;
+        }
+        .checkout .btn:hover , .add-to-cart:hover{
+          background: #6f3725 !important;
+        }
+        .in {
+            background-image: linear-gradient(to top, #5b3125  20%, #6f3725 80%);
+        }
+
+        .linee{
+        background-image: -webkit-gradient(linear, left bottom, left top, #5b3125  20%, #6f3725 80%);
+        background-image: linear-gradient(to top, #5b3125 20%, #6f3725 80%);
+        height: 275px;
+        margin-bottom: 45px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        height: 85%;
+       }
+
+       .curvee{
+         width: 100%;
+         min-height: 150px;
+         text-align: center;
+         background-image: -webkit-gradient(linear, left bottom, left top, #5b3125  20%, #6f3725 80%);
+         background-image: linear-gradient(to top, #5b3125 20%, #6f3725 80%);
+         background-size: 100%;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         border-bottom-left-radius: 20%;
+         border-bottom-right-radius: 20%;
+         overflow: hidden;
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         margin: auto;
+         height: 70%;
+        }
+
+        .Wave {
+          height:70% !important;
+        }
+
+                  .btn:not(.add-to-cart, .category, .disableColor){
+            background: #000000;
+            border: none !important;
+          }
+
+          .done .btn{
+            background: #000000 !important;
+          }
+
+                .swal2-container, .modal{
+          z-index:9999999999999999999999999999999999999999 !important;
+        }
+        .modal {
+          background: rgba(0, 0, 0, 0.39) !important;
+        }
+        .modal-dialog{
+          /*box-shadow: 0 19px 38px rgb(231 231 231 / 44%), 0 15px 12px rgb(0 0 0 / 22%) !important;*/
+          /*margin-top:250px !important;*/
+        }
+
+        .footer-big {
+          margin-top: 250px;
+
+        }
+
+        .curvee, .linee, .Wave{
+          display:none;
+        }
+        .curvee{
+          display:block;
+        }
+
+        .footer-big a {
+            color: #6f3725 !important;
+        }
+
+        
+        .up-breadcrumb{
+          z-index: 1000 !important;
+        }
+        .lead{
+          Word-wrap:break-word;
+        }
+
+        .footer-big .fab, .footer-big .fa{
+          color: #333 !important;
+          border: 1px solid #9fa6ad !important;
+          padding: 10px;
+          border-radius: 50%;
+          font-size:17px;
+          width: auto !important;
+          height: auto !important;
+          margin: auto !important
+        }
+
+        .footer-big .fab:hover, .footer-big .fa:hover{
+          background: #333;
+          color:white !important;
+        }
+
+        
+
+        @media  only screen and (max-width: 768px) {
+
+          .products .list-unstyled li, .simailer .list-unstyled li {
+            border: 2px solid black !important;
+            margin: 10px 0 0 1%;
+            color: black;
+          }
+
+          .products .list-unstyled li.active, .products .list-unstyled li:hover, .simailer .list-unstyled li.active, .simailer .list-unstyled li:hover {
+            color: white;
+            background-color: #717171;
+          }
+        }
+
+    </style>
+    <script>
+    first_color = '#5b3125';
+    button_color = '#000000';
+    </script>
+
+    </head>
+
+    <body class="main">
+      <div class="overlay">
+        <div id="videobg"></div>
+
+      <div class="animation">
+        <div class="curvee"></div>
+        <div class="linee"></div>
+        <div class="Wave waveAnimation">
+           <div class="in top">
+             <div class="wave waveTop" ></div>
+           </div>
+           <div class="in midd">
+             <div class="wave waveMiddle"></div>
+           </div>
+           <div class="in last">
+             <div class="wave waveBottom"></div>
+           </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <img src="https://kyn.fra1.cdn.digitaloceanspaces.com/images/AReelVeSYkyre3VRW0zHcmE8NmplmNrR8Ebvlwe5.gif" class="navbar-brand logo" width="50px">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true" style="color: #fff;"></i>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+
+                                                                                <li class="nav-item">
+                                                                <a class="nav-link" href="/home">الرئيسية</a>
+                                                        </li>
+                                                                                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="/products">المتجر</a>
+                                                        </li>
+                                                                                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="/terms">القوانين</a>
+                                                        </li>
+                                                                                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="/jobs">الوظائف</a>
+                                                        </li>
+                                                                                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="/boosters">البوست</a>
+                                                        </li>
+                                                                                                                        <li class="nav-item">
+                              <a class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void()">
+                                  المتصدرين
+                              </a>
+                              <div class="dropdown">
+                                  <div class="dropdown-menu text-right mr-auto" aria-labelledby="dropdownMenuButton">
+                                                                                <a class="dropdown-item" href="/leaderboard/lm9ns50">ساعات اللعب</a>
+                                                                                <a class="dropdown-item" href="/leaderboard/asfuihj">ساعات اللعب لأخر اسبوع</a>
+                                                                                <a class="dropdown-item" href="/leaderboard/wy9ix">نقاط الشرطه</a>
+                                                                                <a class="dropdown-item" href="/leaderboard/xduyema">نقاط التصنيع</a>
+                                                                        </div>
+                              </div>
+                          </li>
+
+                                                                                                                      
+                                                      
+              
+
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">تواصل معانا</a>
+              </li>-->
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                <a class="nav-link" href="/login">
+                  <button class="btn btn-primary">تسجيل الدخول</button>
+                </a>
+              </li>
+                          </ul>
+          </div>
+        </div>
+      </nav>
+
+      <script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/jquery-3.5.0.min.js"></script>
+
+
+            <script>
+      $(document).ready(function(){
+          if ($(window).scrollTop() >= 5 ) {
+            $(".navbar ").css("background-image","linear-gradient(to top, #6f3725  100%, #6f3725 100%)");
+          } else {
+              $(".navbar ").css("background-image","");
+          }
+
+          $(window).scroll(function() {
+              if ($(window).scrollTop() >= 5 ) {
+                $(".navbar ").css("background-image","linear-gradient(to top, #6f3725  100%, #6f3725 100%)");
+              } else {
+                  $(".navbar ").css("background-image","");
+              }
+          });
+          $("svg circle").attr("fill","#000000")
+      });
+
+
+
+
+      </script>
+            <style>
+            .Wave{
+        display:block;
+      }
+      
+      *:not(.fa, i){
+        font-family: 'Cairo', sans-serif;
+      }
+
+      </style>
+      <script>
+      console.log("#5b3125");
+      console.log("#6f3725");
+      </script>
+
+
+      <a href="fivem://connect/33ej3o" class="bot-note text-center" style="position: fixed;z-index: 999999999;bottom: 10px; left: 10px; display: none;" id="connetWaterMark">
+        <img width="50px" class="shadow" style="background: #b75713; padding: 4px; border-radius: 50%;" src="https://i1.wp.com/fivem.shop/wp-content/uploads/2021/11/fivemshop.png?fit=512%2C512&ssl=1">
+        <p class="small shadow" style="background: #b75713; color: white; padding: 2px 6px; border-radius: 20px; margin-top: 6px;"><b>الدخول للسيرفر</b></p>
+      </a>
+
+            <a href="/cart" class="bot-note text-center" style="position: fixed;z-index: 999999999;bottom: 10px;left: 10px;/* display: none; */" id="connetWaterMark">
+        <i class="fa fa-shopping-cart" style="font-size: 27px;color: #3cae56;"></i>
+        <p class="small shadow" style="background: #3cae56;color: white;padding: 2px 6px;border-radius: 20px;margin-top: 6px;"><b>سلة المشتريات</b></p>
+      </a>
+      
+<div class="online">
+  <div class="container">
+    <div class="logo">
+      <img src="https://kyn.fra1.cdn.digitaloceanspaces.com/images/AReelVeSYkyre3VRW0zHcmE8NmplmNrR8Ebvlwe5.gif" alt="logo" style="width:130px">
+    </div>
+    <!--<div class="Inneronline">
+      <svg height="65" width="100" class="blinking">
+        <circle cx="50" cy="32" r="10" fill="#41e019" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      <span>السيرفر متصل الأن</span>
+    </div>-->
+    <Br>
+    <h1 class="title">LIBERTY CITY CFW</h1>
+  </div>
+</div>
+
+<div class="online-list text-center">
+  <h2 class="white">        تابع البث المباشر على تويتش        </h2>
+  <div class="container">
+      <div class="content-no text-center liveNowSection">
+          <svg width="140px"  height="140px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-tail">
+    <defs>
+      <filter id="tail-0.a4db4fdd84ecd" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3"></feGaussianBlur>
+        <feColorMatrix mode="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 60 -40" result="cm"></feColorMatrix>
+      </filter>
+    </defs>
+    <g ng-attr-filter="url(#{{config.filterid}})" filter="url(#tail-0.a4db4fdd84ecd)" transform="rotate(54 50 50)">
+      <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="4s" begin="0s" repeatCount="indefinite"></animateTransform>
+      <g transform="rotate(333.474 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="19" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.13333333333333333 0 0.03333333333333333 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(331.178 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="18" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.16666666666666669 0 0.06666666666666667 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(328.576 50.0001 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="17" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.2 0 0.1 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(325.612 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="16" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.23333333333333334 0 0.13333333333333333 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(322.212 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="15" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.26666666666666666 0 0.16666666666666666 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(318.287 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="14" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.30000000000000004 0 0.2 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(314.708 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="13" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.33333333333333337 0 0.23333333333333334 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(309.018 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="12" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.3666666666666667 0 0.26666666666666666 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(302.443 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="11" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.4 0 0.3 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(294.767 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="10" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.43333333333333335 0 0.3333333333333333 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(285.715 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="9" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.4666666666666667 0 0.36666666666666664 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(274.96 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="8" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.5 0 0.4 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(263.29 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="7" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.5333333333333333 0 0.43333333333333335 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(247.243 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="6" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.5666666666666667 0 0.4666666666666667 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(233.28 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="5" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.6 0 0.5 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(210.448 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="4" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.6333333333333333 0 0.5333333333333333 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(189.723 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="3" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.6666666666666666 0 0.5666666666666667 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(167.547 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="2" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.7 0 0.6 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(151.39 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="1" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.7333333333333333 0 0.6333333333333333 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+      <g transform="rotate(134.242 50 50)">
+        <g ng-attr-transform="translate(50 {{config.cy}})" transform="translate(50 19.6)">
+          <circle cx="0" cy="0" r="0" ng-attr-fill="{{config.fill}}" ng-attr-transform="scale({{config.scale}})" fill="#ff7c81" transform="scale(0.48)"></circle>
+        </g>
+        <animateTransform attributeName="transform" calcMode="spline" type="rotate" values="0 50 50;360 50 50" keyTimes="0;1" ng-attr-dur="{{config.speed2}}" keySplines="0.7666666666666666 0 0.6666666666666666 1" repeatCount="indefinite" dur="1"></animateTransform>
+      </g>
+    </g>
+  </svg>
+          <p>جاري التحميل</p>
+      </div>
+  </div>
+</div>
+
+
+<div class="footer-big text-right" style="border-top:1px solid #ddd !important; border-bottom:1px solid #ddd !important">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <p class="title">من نحن </p>
+                  <p class="title-dis">سيرفر حياة واقعية</p>
+              </div>
+              <div class="col-md-4">
+                  <p class="title">روابط مهمة</p>
+                  <ul class="list-unstyled pages">
+
+                                                                  <li class="mt-2">
+                          <a  href="/terms" style="color:#333 !important"> القوانين</a>
+                      </li>
+                                                                  <li class="mt-2">
+                          <a  href="https://discord.gg/lc1" style="color:#333 !important"> الدسكورد</a>
+                      </li>
+                                                                  <li class="mt-2">
+                          <a  href="https://cfx.re/join/zgbxdp" style="color:#333 !important"> دخول السيرفر</a>
+                      </li>
+                      
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <p class="title">تواصل معنا</p>
+                  <ul class="list-ustyled social">
+                      
+                                                        <li class="d-inline-block">
+                                <a href="https://discord.gg/lc1" target="_blank" style="color:#333 !important">
+                                  <i class="fab fa-discord"></i>
+                                </a>
+                              </li>
+                          
+
+                      
+                                                        <li class="d-inline-block">
+                                <a href="https://www.tiktok.com/@ahmadadf7" target="_blank" style="color:#333 !important">
+                                  <i class="fab fa-tiktok"></i>
+                                </a>
+                              </li>
+                          
+
+                      
+                                                        <li class="d-inline-block">
+                                <a href="Https://wa.me/+966506690001" target="_blank" style="color:#333 !important">
+                                  <i class="fab fa-whatsapp"></i>
+                                </a>
+                              </li>
+                          
+
+                      
+                                                        <li class="d-inline-block">
+                                <a href="https://www.youtube.com/@its_abuali" target="_blank" style="color:#333 !important">
+                                  <i class="fab fa-youtube"></i>
+                                </a>
+                              </li>
+                          
+
+                                        </ul>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="footer text-center" style="padding:0px !important; background: #fff !important;">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-6 dis text-right text-muted"  style=" justify-content:right !important; ">
+              صنع بإحترافية عن طريق &thinsp; <a href="https://discord.gg/theta" target="_blank" class="text-dark">ثيتا</a>
+           </div>
+           <div class="col-lg-6 text-center not">
+                        <ul class="list-umstyled">
+
+
+                              
+               <li class="d-inline-block">
+                 <img src="/img/paypal2.svg" title="الدفع عن طريق باي بال" data-toggle="tooltip" style="width:60px" >
+               </li>
+               
+                              <li class="d-inline-block">
+                 <img src="https://g-s.tech/websites/imgs/33191637-24.png" title="الدفع عن طريق التحويل البنكي" data-toggle="tooltip">
+               </li>
+               
+             </ul>
+                      </div>
+           <div class="col-lg-4 text-center">
+           </div>
+       </div>
+     </div>
+   </div>
+
+
+
+
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/sweetalert2.all.js"></script>
+<link rel="stylesheet" href="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/sweetalert2.css">
+<script>
+
+
+
+function sweetAlert(type, text, title=null){
+    if(title === null){
+      switch(type) {
+        case "success":
+          title = "نجاح";
+          break;
+        case "error":
+          title = "خطأ";
+          break;
+        default:
+          title = "-";
+      }
+    }
+
+    Swal({
+      title: title,
+      text: text,
+      type: type,
+      showCancelButton: true,
+      showConfirmButton: false,
+      allowOutsideClick: true,
+      allowEscapeKey: true,
+      allowEnterKey: true,
+      cancelButtonColor: '#ef1010',
+      cancelButtonText: 'إغلاق',
+  })
+}
+
+
+
+
+function gift(title, message, href, image){
+  Swal.fire({
+    title: title,
+    html: message + '<br> <small>يرجى الدخول للسيرفر وكتابة <b style="color:' + first_color + '">theta/</b> لإستلام هديتك</small>',
+    imageUrl: image,
+    imageWidth: 100,
+    imageHeight: 100,
+
+    showConfirmButton: false,
+    showCancelButton:true,
+    cancelButtonText: 'إغلاق',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
+}
+
+$("p:contains('{')").hide();
+
+
+
+
+
+
+
+
+
+function addToCart(evt, id, extraClass){
+
+  $.ajax({
+     type: "POST",
+     url: "/cart/add/"+id,
+     data: {'_token':'P0zGZ9BsIrZVyQt3WLltqvjQTRbmt7huXBiE0Hk8'},
+     success : function(data)
+     {
+     }
+  });
+  $(evt).replaceWith(`<a href="/cart" class="btn ${extraClass} btn-success">الذهاب للسلة</a>`);
+
+}
+</script>
+<script>
+
+function sweetCorner(time, type, title){
+  var Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: time*1000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  Toast.fire({
+    type: type,
+    title: title
+  })
+}
+
+</script>
+
+
+
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/jquery-3.5.0.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1https://g-s.tech/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+
+<!-- cdnjs -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+
+
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/bootstrap.min.js"></script>
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/tabel.js"></script>
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/mixitup.min.js"></script>
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/blugin56.js"></script>
+
+<script src="https://kyn.fra1.cdn.digitaloceanspaces.com/themes/basic/slider.js"></script>
+
+<script>
+var con = document.getElementById("container");
+mixer = mixitup(con);
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+function isEmpty(str) {
+    return !str.trim().length;
+}
+$(function() {
+    $('.lazy').Lazy();
+});
+
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+</div>
+</body>
+</html>
+
+<script>
+function test(){
+  $.ajax({
+     type: "POST",
+     url: "/api/twitch",
+     data: {'_token':'P0zGZ9BsIrZVyQt3WLltqvjQTRbmt7huXBiE0Hk8'},
+     success : function(data)
+     {
+       if(data == "null"){
+         $(".liveNowSection").replaceWith('<div class="content-no text-center"><img src="/img/no_stream.svg" alt="not-found" style="width:200px !important"><p>للأسف لا توجد بثوث مباشرة حالياََ</p></div>');
+       }
+       $(".liveNowSection").replaceWith(data);
+     }
+  });
+}
+test();
+</script>
