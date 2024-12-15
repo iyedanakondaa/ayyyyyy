@@ -1,11 +1,17 @@
-CREATE DATABASE swdtechnology;
+-- Create the database
+CREATE DATABASE swd_technology;
 
-USE swdtechnology;
+-- Use the database
+USE swd_technology;
 
+-- Create the users table
 CREATE TABLE users (
-  id INT(11) AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  email VARCHAR(255),
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    id INT AUTO_INCREMENT PRIMARY KEY,      -- Unique ID for each user
+    username VARCHAR(50) NOT NULL UNIQUE,   -- Unique username
+    email VARCHAR(100) NOT NULL UNIQUE,     -- Unique email
+    password VARCHAR(255) NOT NULL,         -- Password (hashed)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp for account creation
 );
+INSERT INTO users (username, email, password) 
+VALUES 
+('DemoAdmin', 'admin@swdtech.com', '$2y$10$XjXueR23.Ozt9MkDZzF1.Oz3EAp5qOqLvNIRtyJgjTPoaVBaHKNJe');
