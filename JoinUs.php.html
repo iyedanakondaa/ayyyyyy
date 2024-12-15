@@ -1,0 +1,149 @@
+﻿
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>SWDTechnology - Join Us</title>
+
+    <meta name="description" content="SWDTechnology - FiveM Server">
+    <meta name="author" content="SWDTechnology">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="SWDTechnology - FiveM Server">
+    <meta property="og:site_name" content="SWDTechnology">
+    <meta property="og:description" content="SWDTechnology - FiveM Server">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="assets/media/favicons/SWDTechnology.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/SWDTechnology.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/SWDTechnology.png">
+    <!-- END Icons -->
+
+    <!-- Stylesheets -->
+    <!-- Fonts and OneUI framework -->
+    <link rel="stylesheet" href="css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
+    <!-- END Stylesheets -->
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div id="page-container" class="rtl-support arabic">
+
+      <!-- Main Container -->
+      <main id="main-container">
+
+
+        <!-- Page Content -->
+        <div class="row g-0 justify-content-center">
+          <div class="hero-static col-lg-7">
+            <div class="content content-full overflow-hidden">
+              <!-- Header -->
+              <div class="text-center">
+                <a href="index.php.html">
+                <img class="rounded-circle" src="assets/media/favicons/SWDTechnology.png" alt="icon" style="width: 40px;">
+                </a>
+                <h1 class="h3 fw-bold mt-3 mb-2">مرحباً بك في  SWD Technology</h1>
+                <h2 class="fs-base fw-medium text-muted mb-0">نرجوا منك إدخال جميع البيانات بحذر</h2>
+              </div>
+            </div>
+              <!-- END Header -->
+                          <!-- First Step ( Account Information ) -->
+              <form class="js-validation" action="JoinMTAPI.php" method="POST">
+                <div class="block block-rounded">
+                  <div class="block-header block-header-default">
+                    <h3 class="block-title">1. معلومات الحساب</h3>
+                    <div class="block-options">
+                      <button type="button" onclick="document.location='JoinUs.php?Reset'" class="btn btn-sm btn-danger">إعادة تعيين</button>
+                    </div>
+                  </div>
+                  
+                  <div class="block-content">
+                    <div class="row items-push">
+                      <div class="col-lg-4">
+                        <p class="fs-sm text-muted">
+                         .
+                        </p>
+                      </div>
+                      <div class="col-lg-6 offset-lg-1">
+                        <div class="mb-4">
+                          <label class="form-label" for="Username">اسم المستخدم</label>
+                          <input type="text" class="form-control form-control-lg" id="Username" name="Username" placeholder="ادخل اسم المستخدم" value="">
+                        </div>
+                        <div class="mb-4">
+                          <label class="form-label" for="Email">الايميل</label>
+                          <input type="email" class="form-control form-control-lg" id="Email" name="Email" placeholder="ادخل الايميل" value="">
+                        </div>
+                        <div class="mb-4">
+                          <label class="form-label" for="Password">كلمة المرور</label>
+                          <input type="password" class="form-control form-control-lg" id="Password" name="Password" placeholder="ادخل كلمة المرور">
+                        </div>
+                        <div class="mb-4">
+                          <label class="form-label" for="CnPassword">تأكيد كلمة المرور</label>
+                          <input type="password" class="form-control form-control-lg" id="CnPassword" name="CnPassword" placeholder="ادخل كلمة المرور مرة اخرى">
+                        </div>
+                        <hr>
+                    <div class="text-center py-2">
+                    تمتلك حساب؟                       <a href="login.php.html">سجل دخولك</a>
+                    </div>  
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="block block-transparent">
+                  <div class="block-content">
+                    <div class="row items-push">
+                      <div class="col-lg-7 offset-lg-5">
+                        <button type="submit" class="btn btn-primary mb-2" name="FirstActStep">
+                          <i class="fa fa-terminal opacity-50 me-1"></i>  الخطوة التالية                         </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            <!-- First Step ( Account Information ) -->
+                                                  </div>
+          </div>
+        </main></div>
+        <!-- END Page Content -->
+      
+      <!-- END Main Container -->
+    
+    <!-- END Page Container -->
+
+    <script src="assets/js/oneui.app.min.js"></script>
+
+    <!-- jQuery (required for jQuery Validation plugin) -->
+    <script src="assets/js/lib/jquery.min.js"></script>
+
+    <!-- Page JS Plugins -->
+    
+    <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="assets/js/plugins/jquery-validation/additional-methods.js"></script>
+
+    <!-- Page JS Helpers (Select2 plugin) -->
+    <script>One.helpersOnLoad(['jq-select2']);</script>
+
+    <!-- Page JS Code -->
+    <script src="assets/js/pages/be_forms_JoinUs.js"></script>
+    <!-- Page JS Code -->
+    <script src="assets/js/pages/op_installation.min.js"></script>
+    <script src="assets/js/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- Page JS Code -->
+    <script src="assets/js/pages/op_auth_signin.min.js"></script>
+    
+    
+          </body>
+</html>
