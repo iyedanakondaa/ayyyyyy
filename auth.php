@@ -1,26 +1,13 @@
 <?php
-session_start();
-require 'config.php';
+$host = 'localhost';
+$dbname = 'swd_technology';
+$username = 'root';
+$password = '';
 
-if (isset($_POST['submit'])) {
-    // Get user inputs
-    $username = $_POST['login-username'];
-    $password = $_POST['login-password'];
-    
-    // Prepare SQL query to fetch user data
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
-    $stmt->execute(['username' => $username]);
-    $user = $stmt->fetch();
-
-    // Check if user exists and password matches
-    if ($user && password_verify($password, $user['password'])) {
-        // User is authenticated
-        $_SESSION['user_id'] = $user['id'];
-        $_SESSION['username'] = $user['username'];
-        header("Location: dashboard.php");  // Redirect to dashboard or another page
-        exit;
-    } else {
-        echo "<script>alert('Invalid username or password');</script>";
-    }
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
 }
 ?>
